@@ -28,23 +28,16 @@ export default function Home() {
     email: "",
     jiraAPIKey: "",
     jiraURL: "",
-    miroURL: "",
-    rememberMe: true,
+    miroBoardID: ""
   });
-
-  console.log(credentials);
 
   return (
     <Router>
       <Seo />
-      <main role="main" className="wrapper">
-        <div className="content">
-          {/* Router specifies which component to insert here as the main content */}
-          <CredentialContext.Provider value={{ credentials, setCredentials }}>
-            <PageRouter />
-          </CredentialContext.Provider>
-        </div>
-      </main>
+      {/* Router specifies which component to insert here as the main content */}
+      <CredentialContext.Provider value={{ credentials, setCredentials }}>
+        <PageRouter />
+      </CredentialContext.Provider>
     </Router>
   );
 }
