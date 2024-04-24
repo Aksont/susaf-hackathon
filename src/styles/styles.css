@@ -173,3 +173,6 @@ h1 {
 h2 {
   color: #2800FF;
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
