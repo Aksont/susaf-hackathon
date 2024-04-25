@@ -13,7 +13,7 @@ const demo = {
 // @ts-ignore
 const BacklogItem = ({ backlogItem }) => {
   return (
-    <div className="p-4 flex flex-col overflow-hidden rounded border gap-4 hover:bg-gray-200 hover:cursor-pointer">
+    <div className="p-4 flex flex-col overflow-hidden rounded border gap-4 hover:bg-gray-50 hover:cursor-pointer">
       <h3 className="font-semibold">{backlogItem.title}</h3>
       <div className="flex justify-between">
         <div className="flex gap-2 flex-row items-center">
@@ -60,13 +60,21 @@ export default function Backlog() {
       if (origin.includes(":3000")) {
         origin = "http://0.0.0.0";
       }
-      fetch(`${origin}:8000/getBacklog/${url}/${apiKey}`)
+      fetch(`${origin}:8000/getBacklog/${url}/${apiKey}`, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+      })
         .then((res) => res.json())
         .then((data) => {
           setItems(JSON.parse(data.data).issues);
         });
       const interval = setInterval(() => {
-        fetch(`${origin}:8000/getBacklog/${url}/${apiKey}`)
+        fetch(`${origin}:8000/getBacklog/${url}/${apiKey}`, {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+        })
           .then((res) => res.json())
           .then((data) => {
             setItems(JSON.parse(data.data).issues);

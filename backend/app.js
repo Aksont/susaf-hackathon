@@ -1,10 +1,13 @@
 const express = require("express");
 const sqlite3 = require("sqlite3").verbose();
 const fetch = require("node-fetch");
+const cors = require("cors");
 
 const app = express();
 const PORT = process.env.PORT || 8000;
 const db = new sqlite3.Database(":memory:");
+
+app.use(cors());
 
 db.serialize(() => {
   db.run("CREATE TABLE logs (jiraId INT, miroTag TEXT)");
