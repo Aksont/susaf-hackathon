@@ -1,0 +1,37 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #FFFFFF;
+  --color-text-main: #111;
+  --color-text-secondary: #555;
+  --color-primary: #0055CC;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-main);
+}
+
+p,
+span,
+svg {
+  color: var(--color-text-secondary);
+
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

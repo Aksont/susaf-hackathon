@@ -1,0 +1,38 @@
+version: '3.9'
+
+services:
+  web:
+    container_name: susaf-web
+    build:
+      context: .
+      dockerfile: docker/backend/Dockerfile
+
+    ports:
+      - 8000:8000
+
+
+  www:
+    container_name: susaf-www
+    build:
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+    volumes:
+      - node_modules:/app/www/node_modules
+
+    ports:
+      - 3000:3000
+
+  nginx:
+    container_name: susaf-nginx
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    volumes:
+      - static:/app/web/static
+    ports:
+      - 80:80
+
+
+volumes:
+  static:
+  node_modules:
