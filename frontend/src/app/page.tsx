@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <CredentialContext.Provider value={{ credential, setCredential }}>
       <div className="flex p-8 gap-4 h-screen">
-        {!displayCredentialsForm ? (
+        {displayCredentialsForm ? (
           <CredentialsForm
             handleSubmitProps={() => {
               setDisplayCredentialsForm(!displayCredentialsForm);
