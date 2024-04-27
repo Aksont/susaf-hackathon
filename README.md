@@ -10,3 +10,5 @@ The goal of the hackathon is to design and develop a web tool that digitizes SUS
 - Create awareness about the sustainability impacts of IT products and services among software engineering professionals and students
 
 **SusDigi** is the name of our tool that incorporates the project management attributes of **JIRA**, the organizational creation of sustainability impacts through **spreadsheets**, and the collaborative visualization of the **SUSAF** framework through **MIRO BOARD**, all in one screen to facilitate the process of assessing the sustainability impacts of every feature being worked on.
+
+Google Sheeet template: https://docs.google.com/spreadsheets/d/134fxWB7nQ7UKV78zFcsdqTgyXq62PrX8ORXuh8tlFgI (you can Make a Copy to your Google account to edit and use it, Apps Script file and functionality will also be copied)
