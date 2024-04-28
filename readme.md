@@ -3,11 +3,18 @@
 ---
 This project has been made as an output of a **3-days hackathon** with the topic of *Integrating SusAF Analysis into industry software projects*, hosted by **LUT University, Finland**.
 
-Our idea was to create a tool for any stakeholders to involve SusAF analysis into every step of requirements definition, from milestone to features perspectives. 
+The goal of the hackathon is to design and develop a web tool that digitizes SUSAF. The Sustainability Awareness Framework (SusAF) is a tool for the sustainable design of software products and services that help companies link sustainability mission and goals to IT products and services. Moreover, it also helps:
 
-We look forward to combine what already exists in any development project using Jira, and link all Epics, Tickets to their corresponding SusAF analysis using a template of SusAD Diagram hosted on Miro. The process would automate in creating Miro stickers for any impact discussed by the team, then they can collaborate in analyze it further, and save it for later references.
+- Identify the sustainability impacts of IT products and services for companies, product managers, software developers, consultants, students
+- Visualize the chain of effects for all identified impacts in each sustainability dimension and three orders of effects to aid:
+- Visualization of sustainability impacts from different stakeholder lenses (CEO/ Product manager/ developer/ student)
+- Discussion among different stakeholders
+- Transform identified sustainability impacts and effects of IT products and services into the product roadmap, features requirements or user stories, SCRUM (product backlog, sprint planning, backlog, review, retrospective)
+- Create awareness about the sustainability impacts of IT products and services among software engineering professionals and students
 
-At this version, we are able to fetch Jira's board info and showing the Miro board in the same page, further development are still needed to make it fully functional as our idea describes.
+**SusDigi** is the name of our tool that incorporates the project management attributes of **JIRA**, the organizational creation of sustainability impacts through **spreadsheets**, and the collaborative visualization of the **SUSAF** framework through **MIRO BOARD**, all in one screen to facilitate the process of assessing the sustainability impacts of every feature being worked on.
+
+Google Sheeet template: https://docs.google.com/spreadsheets/d/134fxWB7nQ7UKV78zFcsdqTgyXq62PrX8ORXuh8tlFgI (you can Make a Copy to your Google account to edit and use it, Apps Script file and functionality will also be copied)
 
 ---
 Development team:
